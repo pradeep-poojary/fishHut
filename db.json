@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "firstName": "s",
+      "username": "s@gmail.com",
+      "password": "111",
+      "id": 1
+    },
+    {
+      "firstName": "Pradeep Poojary",
+      "username": "pradeep@gmail.com",
+      "password": "1234",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Salmon",
+      "description": "This is the description of Salmon",
+      "price": 1000,
+      "image": "assets/images/salmon.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bangda",
+      "description": "This is the description of Bangda",
+      "price": 250,
+      "image": "assets/images/bangda.jpg"
+    },
+    {
+      "id": 3,
+      "name": "crab",
+      "description": "This is the description of crab",
+      "price": 400,
+      "image": "assets/images/crab.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Prawns",
+      "description": "This is the description of prawns",
+      "price": 250,
+      "image": "assets/images/prawns.jpg"
+    },
+    {
+      "id": 5,
+      "name": "lobster",
+      "description": "This is the description of lobster",
+      "price": 250,
+      "image": "assets/images/lobster.jpg"
+    }
+  ],
+  "cartItems": [
+    {
+      "id": 1,
+      "name": "Salmon",
+      "description": "This is the description of Salmon",
+      "price": 1000,
+      "image": "assets/images/salmon.jpg",
+      "count": 1
+    },
+    {
+      "id": 2,
+      "name": "Bangda",
+      "description": "This is the description of Bangda",
+      "price": 250,
+      "image": "assets/images/bangda.jpg",
+      "count": 1
+    },
+    {
+      "id": 3,
+      "name": "crab",
+      "description": "This is the description of crab",
+      "price": 400,
+      "image": "assets/images/crab.jpg",
+      "count": 1
+    }
+  ]
+}

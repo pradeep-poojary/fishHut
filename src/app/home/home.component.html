@@ -1,0 +1,43 @@
+<div class="container sticky-header">
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+            <!-- <img src="assets/images/logo.jpg" alt="FishHut Logo" class="logo-img" /> -->
+            <a routerLink="/">
+                <!-- <img src="assets/images/logo.jpg" alt="FishHut Logo" class="logo-img" /> -->
+                <p>FishHut</p>
+              </a>
+        </div>
+  
+        <div class="search-bar">
+          <input type="text" placeholder="Search products..." />
+          <mat-icon class="search-icon" matSuffix>search</mat-icon>
+        </div>
+  
+       
+        <div class="user-actions">
+          <ng-container *ngIf="currentUser; else guestUserActions">
+            <p>Welcome, {{ currentUser.firstName }}!</p>
+            <a routerLink="cart" routerLinkActive="active">
+              <mat-icon class="cart-icon" aria-hidden="false" aria-label="Cart">shopping_cart</mat-icon>Cart({{ cartItems.length }})
+            </a>
+            <a (click)="logout()">Logout</a>
+          </ng-container>
+          <ng-template #guestUserActions>
+            <a routerLink="login" routerLinkActive="active">Login</a>
+            <a routerLink="signup" routerLinkActive="active">Signup</a>
+          </ng-template>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Main Content -->
+    <main>
+      <h2>Featured Products</h2>
+      <router-outlet></router-outlet>
+    </main>
+  
+    <footer>
+      <p>&copy; 2023 FishHut. All rights reserved.</p>
+    </footer>
+  </div>
